@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    tools:context=".CowFragment">
+
+    <ImageView
+        android:id="@+id/imageBG3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:color/background_light" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_cowhead"
+            android:layout_width="97dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="28dp"
+            android:text="ไถ่ชีวิตโคกระบือ"
+            android:textColor="#BA7C7C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageCow"
+            android:layout_width="224dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/imagecow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cowhead" />
+
+        <TextView
+            android:id="@+id/txt_currentcowmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/textView18"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCow" />
+
+        <TextView
+            android:id="@+id/txt_maxcowmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_CowVatDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/imageCow"
+            app:layout_constraintVertical_bias="0.191" />
+
+        <TextView
+            android:id="@+id/txt_CowVatName"
+            app:layout_constraintBottom_toTopOf="@+id/txt_CowVatDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCow"
+            app:layout_constraintVertical_bias="0.839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox"
+            android:layout_width="359dp"
+            android:layout_height="118dp"
+            android:layout_marginEnd="3dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_CowVatDetail"
+            app:layout_constraintVertical_bias="0.961" />
+
+        <TextView
+            android:id="@+id/txt_CowVatDetail"
+            android:layout_width="280dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="108dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCow" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="4dp"
+            android:layout_height="17dp"
+            android:text="/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_needinput"
+            app:layout_constraintBottom_toTopOf="@+id/editmoneyamount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.578"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนเงินที่ต้องการบริจาค" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitcow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_fragment_doanteall"
+            android:text="บริจาค"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toEndOf="@+id/editmoneyamount"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <EditText
+            android:id="@+id/editmoneyamount"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.863"
+            android:layout_width="236dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <ImageButton
+            android:id="@+id/btn_back_cow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:src="?attr/actionModeCloseDrawable" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

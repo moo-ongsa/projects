@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:title="GET methods">
+        <menu>
+            <item
+                android:id="@+id/nav_users"
+                android:icon="@drawable/ic_friends"
+                android:title="LIST USERS"/>
+            <item
+                android:id="@+id/nav_color"
+                android:icon="@drawable/ic_color"
+                android:title="LIST COLORS"/>
+            <item
+                android:id="@+id/nav_notfound"
+                android:icon="@drawable/ic_notfound"
+                android:title="NOT FOUND"/>
+        </menu>
+    </item>
+
+    <item android:title="POST method">
+        <menu>
+            <item
+                android:id="@+id/nav_create"
+                android:icon="@drawable/ic_create"
+                android:title="Update Profile"/>
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_signout"
+        android:title="Sign Out"/>
+
+</menu>

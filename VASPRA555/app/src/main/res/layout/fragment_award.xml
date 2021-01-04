@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    android:background="#FFFFFF"
+    tools:context=".AwardFragment">
+
+
+    <TextView
+        android:id="@+id/text_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="รางวัลตอบแทน"
+        android:textColor="#BA7C7C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="361dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="100dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="700dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgeView7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/item1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="100dp"
+                        android:text="100 แต้ม"
+                        android:textColor="#BA7C7C"
+                        android:textSize="36dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="หมวกมายากล"
+                        android:textColor="#BA7C7C"
+                        android:textSize="24dp" />
+
+                    <ImageView
+                        android:id="@+id/imaiew7"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="80dp"
+                        android:src="@drawable/ironman" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="90dp"
+                        android:text="1000แต้ม"
+                        android:textColor="#BA7C7C"
+                        android:textSize="36dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="JEDI"
+                        android:textColor="#BA7C7C"
+                        android:textSize="24dp" />
+
+                    <ImageView
+                        android:id="@+id/imawqwqwie"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="110dp"
+                        android:src="@drawable/pavit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00FFFFFF"
+                        android:max="100000"
+                        android:progress="90000"
+                        android:progressDrawable="@drawable/progressbartheme"
+                        android:progressTint="#F8CC21"
+                        android:rotation="180" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="50 แต้ม"
+                        android:textColor="#BA7C7C"
+                        android:textSize="36dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="ข้าวหอมมะลิแสนอร่อย"
+                        android:textColor="#BA7C7C"
+                        android:textSize="24dp" />
+
+                    <ImageView
+                        android:id="@+id/imageVw7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/hat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="90dp"
+                        android:text="100 แต้ม"
+                        android:textColor="#BA7C7C"
+                        android:textSize="36dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="ironman"
+                        android:textColor="#BA7C7C"
+                        android:textSize="24dp" />
+                    <ImageView
+                        android:id="@+id/imaie"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="120dp"
+                        android:src="@drawable/starwar" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="90dp"
+                        android:text="1500แต้ม"
+                        android:textColor="#BA7C7C"
+                        android:textSize="36dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="ประวิตร"
+                        android:textColor="#BA7C7C"
+                        android:textSize="24dp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_payut"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/payut" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

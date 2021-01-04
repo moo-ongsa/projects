@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_ranking"
+        android:icon="@drawable/icon1_ranking"
+        android:title="การจัดอันดับ" />
+
+
+    <item
+        android:id="@+id/navigation_donate"
+        android:icon="@drawable/icon2_donatebath"
+        android:title="บริจาค" />
+
+    <item
+        android:id="@+id/navigation_esiimsi"
+        android:icon="@drawable/icon3_esiimsi"
+        android:title="เซียมซี"
+        />
+
+</menu>

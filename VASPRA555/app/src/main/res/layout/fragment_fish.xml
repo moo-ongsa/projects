@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    tools:context=".FishFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_fishheader"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:text="ให้อาหารปลา"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toTopOf="@id/imageFish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183" />
+
+        <ImageView
+            android:id="@+id/imageFish"
+            android:layout_width="202dp"
+            android:layout_height="182dp"
+            android:layout_marginBottom="240dp"
+            android:src="@drawable/ic_fish"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_currentfishmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_FishVatDetail"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.787"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageFish"
+            app:layout_constraintVertical_bias="0.294" />
+
+        <TextView
+            android:id="@+id/txt_maxfishmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_FishVatDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageFish"
+            app:layout_constraintVertical_bias="0.305" />
+
+        <TextView
+            android:id="@+id/txt_FishVatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageFish" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ConstructVatDetail"
+            app:layout_constraintVertical_bias="0.961"
+            android:layout_width="359dp"
+            android:layout_height="118dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="521dp" />
+
+        <TextView
+            android:id="@+id/txt_needinput"
+            app:layout_constraintBottom_toTopOf="@+id/editmoneyamount"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.548"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนเงินที่ต้องการบริจาค"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="540dp" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitfish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_fragment_doanteall"
+            android:text="บริจาค"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toEndOf="@+id/editmoneyamount"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.771" />
+
+        <TextView
+            android:id="@+id/txt_FishVatDetail"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_FishVatName"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_width="269dp"
+            android:layout_height="126dp"
+            android:text="test detail"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="395dp" />
+
+        <EditText
+            android:id="@+id/editmoneyamount"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_donatesubmitfish"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.757"
+            android:layout_width="236dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="571dp" />
+
+        <ImageButton
+            android:id="@+id/btn_back_fish"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:src="?attr/actionModeCloseDrawable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="4dp"
+            android:layout_height="17dp"
+            android:text="/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

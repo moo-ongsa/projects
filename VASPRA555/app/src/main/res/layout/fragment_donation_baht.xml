@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    android:background="#FFFFFF"
+    tools:context=".DonationBahtFragment">
+
+
+    <Button
+        android:id="@+id/bt_donatebahtNext1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonblue"
+        android:elevation="2dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="ถัดไป"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="310dp"
+        android:layout_height="525dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <Button
+                        android:id="@+id/btn_minus_1"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#00F81616"
+                        android:elevation="2dp"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_1"
+                        app:layout_constraintHorizontal_bias="0.322"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_total_1"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_1"
+                        android:layout_width="67dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#00000000"
+                        android:text="ข้าวหอมฉัตรอรุณ 5kg"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.192"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_1"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.7"
+                        app:layout_constraintStart_toEndOf="@+id/text_count_1" />
+
+                    <TextView
+                        android:id="@+id/text_count_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.513"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="ฉัตรอรุณ"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/text_pirce_1"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_1"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item1"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_1"
+                        app:layout_constraintEnd_toEndOf="@+id/view_total_1"
+                        app:layout_constraintStart_toStartOf="@+id/view_total_1"
+                        app:layout_constraintTop_toTopOf="@+id/view_total_1"
+                        app:layout_constraintVertical_bias="0.541"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="100 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.055"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_minus_1"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_1"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_1"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_1"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_1"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_1"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_1"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_1"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_111"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_1"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_1"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_1"
+                        app:layout_constraintVertical_bias="0.74"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_112"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="135dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_1"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_1"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_1"
+                        app:layout_constraintTop_toTopOf="@+id/view_total_1"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    android:layout_marginLeft="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_2"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_2"
+                        android:layout_width="96dp"
+                        android:layout_height="25dp"
+                        android:background="#00000000"
+                        android:text="ขนมมันฝรั่งอบกรอบตราเลย์  1ถุง(ขนาดกลาง)"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView_2"
+                        app:layout_constraintStart_toStartOf="@+id/text_name_product_2"
+                        app:layout_constraintTop_toTopOf="@+id/view_total_2"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_2"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_2"
+                        app:layout_constraintVertical_bias="0.85" />
+
+                    <TextView
+                        android:id="@+id/text_count_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_2"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_2"
+                        app:layout_constraintHorizontal_bias="0.565"
+                        app:layout_constraintStart_toEndOf="@+id/btn_minus_2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_2"
+                        app:layout_constraintVertical_bias="0.94"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="เลย์"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_2"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/view_total_2"
+                        app:layout_constraintStart_toStartOf="@+id/view_total_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias=".54"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="22 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/btn_minus_2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_2"
+                        app:layout_constraintHorizontal_bias="0.18"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_2"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_2"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_2"
+                        app:layout_constraintVertical_bias="0.84000003"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <TextView
+                        android:id="@+id/textView_2"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_2"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_2"
+                        app:layout_constraintVertical_bias="0.65"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_212"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_2"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_2"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_2"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_2"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_3"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_3"
+                        android:layout_width="69dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="น้ำดึ่มแร่ธรรมชาติออร่า 12ขวด"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView_3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_3"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_minus_3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="30dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_3"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_3"
+                        app:layout_constraintHorizontal_bias="0.266"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="ออร่า"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_3"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/item3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view_total_3"
+                        app:layout_constraintVertical_bias="0.18"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="140 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_3"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_3"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toEndOf="@+id/btn_minus_3"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_3"
+                        app:layout_constraintVertical_bias="0.90999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_3"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_3"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_3"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_3"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_3"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_3"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_3"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_minus_1"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_3"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_3"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_3"
+                        app:layout_constraintVertical_bias="0.57"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    android:layout_marginLeft="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_4"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_4"
+                        android:layout_width="88dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="บะหมี่กึ่งสำเร็จรูปรสต้มยำกุ้งตรามาม่า 1ห่อ"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_name_product_4"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_4"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_plus_4"
+                        app:layout_constraintStart_toStartOf="@+id/btn_plus_4"
+                        app:layout_constraintTop_toTopOf="@+id/btn_plus_4" />
+
+                    <Button
+                        android:id="@+id/btn_minus_4"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.02"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="มาม่า"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_4"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view_total_4"
+                        app:layout_constraintVertical_bias="0.546"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="8 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_4"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_4"
+                        app:layout_constraintHorizontal_bias="0.09"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_4"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_4"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_4"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toEndOf="@+id/btn_minus_4"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_4"
+                        app:layout_constraintVertical_bias="0.90999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_412"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_4"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_4"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_4"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_4"
+                        app:layout_constraintVertical_bias="0.65999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_4"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_minus_4"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_4"
+                        app:layout_constraintHorizontal_bias="0.6"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_4"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_4"
+                        app:layout_constraintVertical_bias="0.9"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_5"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="2dp" />
+
+                    <TextView
+                        android:id="@+id/text_detail_5"
+                        android:layout_width="108dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="ไอศครีมแบบโคนรสวนิลาใส่ช็อคโกแลตตราวอล 1โคน"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_name_product_5"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_5"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_plus_5"
+                        app:layout_constraintStart_toStartOf="@+id/btn_plus_5"
+                        app:layout_constraintTop_toTopOf="@+id/btn_plus_5" />
+
+                    <Button
+                        android:id="@+id/btn_minus_5"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_5"
+                        app:layout_constraintEnd_toEndOf="@+id/view_5"
+                        app:layout_constraintStart_toStartOf="@+id/view_5"
+                        app:layout_constraintTop_toTopOf="@+id/view_5"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.513"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="คอนเน็ตโต้"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_5"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_detail_5"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="24 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_5"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_5"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_5"
+                        app:layout_constraintVertical_bias="0.65999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_5"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_5245"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_5"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_5"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_5"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_5"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints"/>
+
+                    <TextView
+                        android:id="@+id/textView_5"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_5"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_5"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_5"
+                        app:layout_constraintVertical_bias="0.57"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    android:layout_marginLeft="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_6"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_6"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_6"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_6"
+                        app:layout_constraintVertical_bias="0.71000004"
+                        tools:ignore="MissingConstraints " />
+
+                    <TextView
+                        android:id="@+id/text_detail_6"
+                        android:layout_width="89dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="ขนมเยลลี่ปีโป้หลากกลิ่นผลไม้ 1ชุด"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_name_product_6" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_6"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_plus_6"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_plus_6"
+                        app:layout_constraintTop_toTopOf="@+id/btn_plus_6" />
+
+                    <Button
+                        android:id="@+id/btn_minus_6"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_6"
+                        app:layout_constraintEnd_toEndOf="@+id/view_6"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/view_6"
+                        app:layout_constraintTop_toTopOf="@+id/view_6"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="70 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_6"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_6"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toEndOf="@+id/btn_minus_6"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_6"
+                        app:layout_constraintVertical_bias="0.90999997"
+                        tools:ignore="MissingConstraints"  />
+
+                    <TextView
+                        android:id="@+id/text_name_product_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="ปีโป้"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_6"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_detail_6"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_6"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_6421"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_6"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_6"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_6"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_6"
+                        app:layout_constraintVertical_bias="0.65999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_6"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_6"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_6"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_6"
+                        app:layout_constraintVertical_bias="0.59000003"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_7"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_7"
+                        android:layout_width="101dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="ปลาแมคเคอเรลในซอสมะเขือเทศตราอยัม 1กระป๋อง"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_name_product_7"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_7"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_plus_7"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_plus_7"
+                        app:layout_constraintTop_toTopOf="@+id/btn_plus_7"  />
+
+                    <Button
+                        android:id="@+id/btn_minus_7"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_7"
+                        app:layout_constraintEnd_toEndOf="@+id/view_7"
+                        app:layout_constraintStart_toStartOf="@+id/view_7"
+                        app:layout_constraintTop_toTopOf="@+id/view_7"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.513"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="อยัมแบรนด์"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_7"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_detail_7"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_pirce_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="40 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_7"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_plus_7"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_7"
+                        app:layout_constraintVertical_bias="0.35000002"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_7"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_454"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_7"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_7"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_7"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_7"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints"/>
+
+                    <TextView
+                        android:id="@+id/textView_7"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.94"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="119dp"
+                    android:layout_height="161dp"
+                    android:layout_marginLeft="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25">
+
+                    <View
+                        android:id="@+id/view_total_8"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_detail_8"
+                        android:layout_width="67dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00000000"
+                        android:text="ขนมทอดกรอบโปเต้ 1ห่อ"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_name_product_8" />
+
+                    <View
+                        android:id="@+id/view__btn_plus_8"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_plus_8"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_plus_8"
+                        app:layout_constraintTop_toTopOf="@+id/btn_plus_8" />
+
+                    <Button
+                        android:id="@+id/btn_minus_8"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_8"
+                        app:layout_constraintEnd_toEndOf="@+id/view_8"
+                        app:layout_constraintStart_toStartOf="@+id/view_8"
+                        app:layout_constraintTop_toTopOf="@+id/view_8"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_count_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/view_total_8"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_8"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toEndOf="@+id/btn_minus_8"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_8"
+                        app:layout_constraintVertical_bias="0.90999997"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/text_name_product_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="โปเต้"
+                        android:textColor="#BA7C7C"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView_8"
+
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:src="@drawable/item8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_detail_8"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="MissingConstraints"  />
+
+                    <TextView
+                        android:id="@+id/text_pirce_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="50 บาท"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view_8"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view__btn_plus_8"
+                        app:layout_constraintHorizontal_bias="0.09"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/btn_plus_8"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_donate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_8"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_minus_8"
+                        app:layout_constraintStart_toStartOf="@+id/btn_minus_8"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView_8"
+                        app:layout_constraintVertical_bias="0.57"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView_455"
+                        android:layout_width="8dp"
+                        android:layout_height="17dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view__btn_plus_8"
+                        app:layout_constraintEnd_toEndOf="@+id/view__btn_plus_8"
+                        app:layout_constraintStart_toStartOf="@+id/view__btn_plus_8"
+                        app:layout_constraintTop_toTopOf="@+id/view__btn_plus_8"
+                        app:layout_constraintVertical_bias="0.65999997"
+                        tools:ignore="MissingConstraints"  />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_back_coffin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="ตักบาตร"
+        android:textColor="#BA7C7C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/squareyellow"
+        app:layout_constraintEnd_toStartOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/circlewhite"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="130dp"
+        android:src="@drawable/squareyellow"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เลือกวัด"
+        android:textColor="#BA7C7C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="เลือกสินค้า"
+        android:textColor="#BA7C7C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ชำระเงิน"
+        android:textColor="#BA7C7C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    tools:context=".DonateFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000F0F0F"
+        android:src="@android:color/background_light"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/t_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:text="ตักบาตร"
+        android:textColor="#BA7C7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_donate" />
+
+    <Button
+        android:id="@+id/btn_donate_donate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="116dp"
+        android:background="#00F8CC21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_donate_construct"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_donate_monthly"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="284dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_donate_coffin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_donate_cow"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="464dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_donate_fish"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_donate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/icon2_donatebath"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_donate"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_donate"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_donate"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_donate" />
+
+    <ImageView
+        android:id="@+id/image_coffin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/coffin_white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_coffin"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_coffin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_coffin"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_coffin" />
+
+    <TextView
+        android:id="@+id/t_cow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="ไถ่ชีวิตโคกระบือ"
+        android:textColor="#BA7C7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_cow" />
+
+    <ImageView
+        android:id="@+id/image_construct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/construction"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_construct"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_construct"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_construct"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_construct" />
+
+    <TextView
+        android:id="@+id/t_construct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:text="สิ่งก่อสร้าง"
+        android:textColor="#BA7C7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_construct" />
+
+    <ImageView
+        android:id="@+id/image_cow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/cow_white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_cow"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_cow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_cow"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_cow" />
+
+    <ImageView
+        android:id="@+id/image_monthly"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/appointment_white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_monthly"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_monthly"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_monthly"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_monthly" />
+
+    <TextView
+        android:id="@+id/t_monthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:text="รายเดือน"
+        android:textColor="#BA7C7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_monthly" />
+
+    <TextView
+        android:id="@+id/t_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="119dp"
+        android:text="ช่องทางทำบุญ"
+        android:textColor="#BA7C7C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_coffin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        android:text="ศพไร้ญาติ"
+        android:textColor="#BA7C7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_coffin" />
+
+    <ImageView
+        android:id="@+id/image_fish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_donate"
+        android:padding="7dp"
+        android:src="@drawable/fish_white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_donate_fish"
+        app:layout_constraintEnd_toEndOf="@+id/btn_donate_fish"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_donate_fish"
+        app:layout_constraintTop_toTopOf="@+id/btn_donate_fish" />
+
+    <TextView
+        android:id="@+id/t_fish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="ให้อาหารปลา"
+        android:textColor="#BA7C7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_donate_fish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

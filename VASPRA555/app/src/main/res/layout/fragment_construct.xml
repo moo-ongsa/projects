@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    tools:context=".ConstructFragment">
+
+    <ImageView
+        android:id="@+id/imageBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:color/background_light" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_constructhead"
+            android:layout_width="63dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="28dp"
+            android:text="สิ่งก่อสร้าง"
+            android:textColor="#BA7C7C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_constructname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="เจดีย์"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_constructhead" />
+
+        <ImageView
+            android:id="@+id/imageConstruct"
+            android:layout_width="224dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/jd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_constructname" />
+
+        <TextView
+            android:id="@+id/txt_currentconstructmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="72dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_ConstructVatDetail"
+            app:layout_constraintEnd_toStartOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="4dp"
+            android:layout_height="17dp"
+            android:text="/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_maxconstructmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="72dp"
+            android:text="/TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_ConstructVatDetail"
+            app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/txt_ConstructVatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txt_ConstructVatDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageConstruct"
+            app:layout_constraintVertical_bias="0.839" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox"
+            android:layout_width="359dp"
+            android:layout_height="118dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ConstructVatDetail"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_ConstructVatDetail"
+            android:layout_width="280dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="104dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageConstruct" />
+
+        <TextView
+            android:id="@+id/txt_needinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนเงินที่ต้องการบริจาค"
+            app:layout_constraintBottom_toTopOf="@+id/editmoneyamount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitconstruct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_fragment_doanteall"
+            android:text="บริจาค"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toEndOf="@+id/editmoneyamount"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <EditText
+            android:id="@+id/editmoneyamount"
+            android:layout_width="236dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.863" />
+
+        <ImageButton
+            android:id="@+id/btn_back_construct"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:src="?attr/actionModeCloseDrawable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

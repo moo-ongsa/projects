@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/listview_background_shape">
+
+    <!-- Bottom 2dp Shadow -->
+    <item>
+        <shape  android:shape="rectangle">
+
+            <solid android:color="#d8d8d8" />
+            <corners android:radius="10dp" />
+
+        </shape>
+    </item>
+
+    <!-- White Top color -->
+    <item android:bottom="8px">
+
+        <shape  android:shape="rectangle">
+            <solid android:color="#00A1B6" />
+            <corners android:radius="10dp" />
+
+
+        </shape>
+
+    </item>
+
+
+</layer-list>

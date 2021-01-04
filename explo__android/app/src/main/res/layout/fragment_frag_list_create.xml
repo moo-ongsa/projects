@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragListCreate">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/editFragCreateName"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/colorBlack"
+                android:backgroundTint="@color/colorBlack"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Job"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:id="@+id/editFragCreateJob"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/colorBlack"
+                android:backgroundTint="@color/colorBlack"/>
+            <Button
+                android:id="@+id/buttonFragCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CREATE"
+                android:backgroundTint="@color/colorSecond"
+                />
+        </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_list_create" />
+    </LinearLayout>
+
+</FrameLayout>

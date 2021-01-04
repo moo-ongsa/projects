@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    tools:context=".MonthlyFragment">
+
+    <ImageView
+        android:id="@+id/imageBG3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:color/background_light" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_monthlyhead"
+            android:layout_width="118dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:text="รายเดือน"
+            android:textColor="#BA7C7C"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageRectanglebox"
+            android:layout_width="359dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="168dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox3"
+            android:layout_width="359dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="20dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox4"
+            android:layout_width="359dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="20dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectanglebox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageRectanglebox2"
+            android:layout_width="359dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="20dp"
+            android:rotation="180"
+            android:src="@drawable/rectangle"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectanglebox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitmonthly150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/rectangle_thank"
+            android:text="สมัคร"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox4"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitmonthly300"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/rectangle_thank"
+            android:text="สมัคร"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox2"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitmonthly500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/rectangle_thank"
+            android:text="สมัคร"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox3"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <Button
+            android:id="@+id/btn_donatesubmitmonthly1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/rectangle_thank"
+            android:text="สมัคร"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <ImageButton
+            android:id="@+id/btn_back_monthly"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:src="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="276dp"
+            android:layout_height="80dp"
+            android:text="เงินที่ได้จากการบริจาคในแต่ละเดือนของคุณ จะถูกแบ่งไปบริจาคในแต่ละหมวดหมู่ของการทำบุญ และระบบจะหักเงินบริจาคในทุกๆ วันที่ 1 ของเดือน"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintVertical_bias="0.488" />
+
+        <TextView
+            android:id="@+id/tv_LuckyShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150 บาท ต่อเดือน"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox4"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox4"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox4"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox4" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300 บาท ต่อเดือน"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox2"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox2"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox2"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox2" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500 บาท ต่อเดือน"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox3"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox3"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox3"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox3" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000 บาท ต่อเดือน"
+            android:textColor="#BA7C7C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectanglebox"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectanglebox"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imageRectanglebox"
+            app:layout_constraintTop_toTopOf="@+id/imageRectanglebox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

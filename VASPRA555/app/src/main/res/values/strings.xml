@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VASPRA555</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TextView1">บัญชีผู้ใช้</string>
+    <string name="TextView2">รหัสผ่าน</string>
+    <string name="TextView3">ยังไม่มีบัญชีผู้ใช้ ? </string>
+    <string name="TextView4">สมัครได้ทีนี้</string>
+
+    <string-array name="vat">
+        <item>วัดสิงห์</item>
+        <item>วัดป่า</item>
+        <item>วัดวาอาราม</item>
+        <item>วัดไทย</item>
+        <item>วัดไชย</item>
+        <item>วัดทุ่งครุ</item>
+        <item>วัดค่า</item>
+        <item>วัดยูนิคอร์น</item>
+        <item>วัดน่า</item>
+
+    </string-array>
+</resources>

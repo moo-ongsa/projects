@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/historyprojecstyle">
+
+    <TextView
+        android:id="@+id/tvHistoryprojectSequence"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:text="ลำดับ  " />
+
+    <TextView
+        android:id="@+id/tvHistoryprojectDonate"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="จำนวนราคา" />
+
+    <TextView
+        android:id="@+id/tvHistoryprojectType"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="ประเภท" />
+
+    <TextView
+        android:id="@+id/tvHistoryprojectDate"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="วันที่" />
+
+</LinearLayout>

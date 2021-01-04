@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="362dp"
+    android:layout_height="639dp"
+    android:background="#FFFFFF"
+    tools:context=".CartFragment">
+
+    <TextView
+        android:id="@+id/t_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:text="รถเข็น"
+        android:textColor="#BA7C7C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="29dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="29dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/leftarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="413dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_1"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_1"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_1"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_2"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_2"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_2"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_3"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_3"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_3"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_3"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_3"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_4"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_4"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_4"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_4"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_4"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_5"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_5"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_5"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_5"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_5"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_6"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rectanglecart">
+
+                <ImageView
+                    android:id="@+id/img_bg_6"
+                    android:layout_width="347dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rectanglecart" />
+
+                <ImageView
+                    android:id="@+id/img_product_6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item1" />
+
+                <TextView
+                    android:id="@+id/text_name_product_cart_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ฉัตรอรุณ"
+                    android:textColor="#BA7C7C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_namedetail_product_cart_6"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="45dp"
+                    android:text="ข้าวสวยฉัตรอรุณ 5kg"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="57dp"
+                    android:background="@drawable/rectangle_storke_cart" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rectangle_cart_count" />
+
+                <TextView
+                    android:id="@+id/text_count_cart_6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="58dp"
+                    android:text="1"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_minus_cart_6"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="60dp" />
+
+                <Button
+                    android:id="@+id/btn_plus_cart_6"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="60dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="58dp"
+                    android:text="+"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="58dp"
+                    android:text="-"
+                    android:textColor="#BA7C7C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="58dp"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_cart_6"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/close" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="475dp"
+        android:background="@drawable/rectanglecart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectanglecart"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#BA7C7C"
+            android:text="รายละเอียดการชำระเงิน" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#BA7C7C"
+            android:text="ค่าสิ่งของ" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:textColor="#BA7C7C"
+            android:text="ค่าขนส่ง" />
+        <TextView
+            android:id="@+id/text_pirce_total_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#BA7C7C"
+            android:text="270 บาท" />
+        <TextView
+            android:id="@+id/text_pirce_total_transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="60dp"
+            android:textColor="#BA7C7C"
+            android:text="30 บาท" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="30dp"
+            android:background="#F5E7B7"
+            android:layout_marginTop="83dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="85dp"
+            android:textColor="#BA7C7C"
+            android:text="เงินรวมสุทธิ" />
+        <TextView
+            android:id="@+id/text_pirce_total_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="85dp"
+            android:textColor="#BA7C7C"
+            android:text="300 บาท" />
+        <Button
+            android:id="@+id/btn_payment_cart"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rectangle_thank"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="110dp"
+            android:text="ชำระเงิน"
+            android:textColor="#FFFFFF"
+            />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
